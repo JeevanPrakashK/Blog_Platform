@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="form">
+    <form (ngSubmit)="addPost()">
+      <div class="input-div">
+        <label for="title">Title</label> <br />
+        <input
+          type="text"
+          [(ngModel)]="title"
+          name="title"
+          placeholder="Enter Title"
+          id="title"
+          required
+          class="input"
+        />
+      </div>
+
+      <div class="input-div">
+        <label for="content">Content</label> <br />
+        <textarea
+          [(ngModel)]="content"
+          name="content"
+          placeholder="Enter Content"
+          id="content"
+          cols="30"
+          rows="10"
+          required
+          class="input"
+        ></textarea>
+      </div>
+
+      <div class="input-div">
+        <label for="author">Author</label> <br />
+        <input
+          type="text"
+          [(ngModel)]="author"
+          name="author"
+          placeholder="Enter Author Name"
+          id="author"
+          required
+          class="input"
+        />
+      </div>
+      <div><button type="submit">Create Blog</button></div>
+    </form>
+  </div>
+  <div class="recent"><p routerLink="/listpost">View Recent Blogs</p></div>
+</div>

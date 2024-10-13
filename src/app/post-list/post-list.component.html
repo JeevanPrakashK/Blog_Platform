@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="recent">
+    <h2>Recent Blogs</h2>
+  </div>
+  <div class="post">
+    <div *ngFor="let post of posts" class="posts">
+      <div class="content">
+        <small class="bnum"
+          ><span class="sub-title">Blog Number:</span>
+          {{ post.blogNumber }}</small
+        >
+      </div>
+      <div class="content">
+        <p><span class="sub-title">Title:</span> {{ post.title }}</p>
+      </div>
+      <div class="content">
+        <span class="sub-title">Content:</span>
+        <p class="post-content">
+          <br />
+          {{ post.content }}
+        </p>
+      </div>
+
+      <p class="author">
+        <small>By {{ post.author }} on {{ post.date | date }}</small>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.header {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #844685;
+  padding-left: 25px;
+  padding-right: 150px;
+}
+
+.header > h1 {
+  font-family: "Pacifico", cursive;
+  color: #f3c623;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  text-decoration: underline;
+  text-decoration-color: #faf4ff;
+  font-weight: 400;
+}
+
+.header > button {
+  height: 45px;
+  width: 125px;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: transparent;
+  outline: none;
+  color: #faf4ff;
+  border: 2px solid #f3c623;
+  border-radius: 25px;
+  cursor: pointer;
+}

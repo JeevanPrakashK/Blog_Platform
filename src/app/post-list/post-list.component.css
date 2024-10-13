@@ -1,0 +1,39 @@
+.recent h2 {
+  font-family: "Pacifico", cursive;
+  color: #844685;
+  font-weight: 400;
+  text-decoration: underline;
+  text-decoration-color: #f3c623;
+  margin-bottom: 20px;
+}
+
+.post {
+  /* margin: 25px 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #10375c; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.posts {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 25px;
+  margin-top: 25px;
+  border-radius: 25px;
+  width: 450px;
+  min-height: 450px;
+}
+
+.content {
+  padding: 10px 0;
+}
+
+.sub-title {
+  color: #844685;
+}
+
+.author {
+  float: right;
+  margin-top: 15px;
+}
